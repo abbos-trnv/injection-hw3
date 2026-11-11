@@ -1,8 +1,7 @@
 # Запуск и сдача ДЗ 3
 
 Это подготовка к эксперименту, а не подтверждённое решение. Две атаки и
-черновик отчёта лежат рядом. Сначала заменить trnv на свою фамилию латиницей
-в имени папки и командах, если trnv не является фамилией.
+черновик отчёта лежат рядом в папке attacks/turgunov/.
 
 ## Окружение
 
@@ -38,8 +37,8 @@ PYTHONUTF8 нужен для кириллицы в выводе при пере�
 
 ```powershell
 .\.venv\Scripts\python.exe run.py --name clean_v1
-.\.venv\Scripts\python.exe run.py --attack attacks/trnv/attack.md --goal A,B --runs 5 --name baseline_v1
-.\.venv\Scripts\python.exe run.py --attack attacks/trnv/attack_spotlighting.md --defense spotlighting,repeat_task --goal A,B --runs 5 --name protected_v1
+.\.venv\Scripts\python.exe run.py --attack attacks/turgunov/attack.md --goal A,B --runs 5 --name baseline_v1
+.\.venv\Scripts\python.exe run.py --attack attacks/turgunov/attack_spotlighting.md --defense spotlighting,repeat_task --goal A,B --runs 5 --name protected_v1
 ```
 
 Результаты сохраняются в:

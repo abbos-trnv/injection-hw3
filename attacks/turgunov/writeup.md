@@ -1,7 +1,6 @@
 # ДЗ 3. Инъекция в резюме Райана Гослинга
 
-Автор: уточнить фамилию и имя перед сдачей. Папка trnv временно названа
-по GitHub-нику abbos-trnv; по условию нужна фамилия латиницей.
+Автор: Turgunov. Папка сдачи: attacks/turgunov/.
 
 Статус: подготовлены две гипотезы атак. Реальные прогоны на модели не
 выполнены, успешность не установлена. Отчёт не готов к сдаче; настоящих
@@ -18,7 +17,7 @@
 
 ```powershell
 $env:PYTHONUTF8 = "1"
-python run.py --attack attacks/trnv/attack.md --goal A,B --runs 5 --name baseline_v1
+python run.py --attack attacks/turgunov/attack.md --goal A,B --runs 5 --name baseline_v1
 ```
 
 Результат: не измерен, прогонов 0. Доказательство: отсутствует.
@@ -38,7 +37,7 @@ python run.py --attack attacks/trnv/attack.md --goal A,B --runs 5 --name baselin
 Файл: attack_spotlighting.md. Команда:
 
 ```powershell
-python run.py --attack attacks/trnv/attack_spotlighting.md --defense spotlighting,repeat_task --goal A,B --runs 5 --name protected_v1
+python run.py --attack attacks/turgunov/attack_spotlighting.md --defense spotlighting,repeat_task --goal A,B --runs 5 --name protected_v1
 ```
 
 Результат: не измерен, прогонов 0. Доказательство: отсутствует.
@@ -74,5 +73,5 @@ trace_protected.md) или дать ссылки LangSmith. Если защит�
 ## Ограничения
 
 Код агента, задачи, защиты и data/ не изменены. Все добавленные файлы
-находятся только в attacks/trnv/. Цель C и часть со звёздочкой в эту
+находятся только в attacks/turgunov/. Цель C и часть со звёздочкой в эту
 подготовку не входят: выбран разрешённый вариант 2а.
