@@ -68,17 +68,6 @@ temperature в Messages.create, который использует исходн
 В writeup.md приведены все попытки и их результаты; выбор успешного трейса
 не выдаётся за подтверждённую частоту успеха.
 
-## Успешная обязательная часть
-
-```powershell
-.\.venv\Scripts\python.exe run.py --attack attacks/turgunov/attack_roles.md --goal A,B --name roles_pilot
-.\.venv\Scripts\python.exe run.py --attack attacks/turgunov/attack_roles.md --defense spotlighting,repeat_task --goal A,B --name roles_protected_pilot
-```
-
-Эти два варианта проверялись по одному разу. Первый достиг A+B, второй — нет.
-В writeup.md приведены все попытки и их результаты; выбор успешного трейса
-не выдаётся за подтверждённую частоту успеха.
-
 ## Сдача
 
 После экспериментов заполнить writeup.md и скопировать выбранные реальные
